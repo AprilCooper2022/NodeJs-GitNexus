@@ -268,7 +268,7 @@ const AppContent = () => {
           // Refresh the repo list, connect to the new repo, and switch to it.
           // Retry once after 1s if the repo isn't found yet (server may still
           // be reinitializing after the worker completed).
-          const url = serverBaseUrl ?? 'http://localhost:4747';
+          const url = serverBaseUrl ?? 'http://107.21.125.90:4747';
           for (let attempt = 0; attempt < 2; attempt++) {
             try {
               const repos = await fetchRepos();
